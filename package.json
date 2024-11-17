@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "install": "UPDATE_REQUIREMENTS=1 bash scripts/setup.sh",
+    "start": "python -m http.server -b localhost -d ./dist"
+  }
+}
