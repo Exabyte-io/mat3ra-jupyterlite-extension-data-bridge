@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: main
+    branches: none
   pull_request:
-    branches: '*'
+    branches: none
 
 jobs:
   build:
@@ -44,7 +44,7 @@ jobs:
         pip uninstall -y "data_bridge" jupyterlab
 
     - name: Upload extension packages
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: extension-artifacts
         path: dist/data_bridge*
