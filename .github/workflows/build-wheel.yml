@@ -1,4 +1,4 @@
-name: Build and Publish Wheel to GitHub Pages
+name: Build and Publish Wheel to Release
 
 on:
   workflow_dispatch:
